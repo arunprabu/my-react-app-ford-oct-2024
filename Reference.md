@@ -40,15 +40,6 @@ JSX
   * class attribute should be replaced with className
 
 
-Agenda
----
-  Core Concepts
-    1. Props 
-    2. States 
-    3. Events 
-    4. Conditional Rendering 
-    5. Lists and Keys 
-
 Routing 
 ----
 
@@ -56,13 +47,13 @@ Routing
   ======================
     7 Characteristics
     -----------------
-      1. Pages should NOT reload 
+      1. Pages should NOT reload [DONE]
       2. URL should change [DONE]
-      3. Browser history should be maintained w/o page refresh 
-      4. Header and Footer should not be loaded again and again
-      5. The section header and footer should show contextual updates 
-      6. Active Menu should be set 
-      7. Page Title should also be changed 
+      3. Browser history should be maintained w/o page refresh [DONE]
+      4. Header and Footer should not be loaded again and again [DONE]
+      5. The section in between header and footer should show contextual updates [DONE]
+      6. Active Menu should be set [TODO]
+      7. Page Title should also be changed [TODO]
 
 
 
@@ -81,3 +72,34 @@ Routing
     Let's check the app. URLs changed.
 
   Step 3: 
+    Put the whole app under the BrowserRouter in App.tsx 
+
+  Step 4:
+    Let's have the routing configuration in App.tsx
+
+  Step 5: 
+    Let's stop the page refresh. 
+    Replace <a href="/"> with <Link to="/"> in MenuList.tsx
+
+  Step 6:
+    Check the app. SPA is made.
+
+
+
+Agenda
+---
+  Core Concepts
+    1. Props  [DONE]
+    2. States 
+    3. Events 
+    4. Conditional Rendering 
+    5. Lists and Keys 
+
+
+Cross Component Communication
+---
+  1. Parent to Child Component Communication [DONE]
+      using props  
+
+  2. Child to Parent Component Communication
+  3. Any to Any Component Communication

@@ -10,22 +10,35 @@ Component is made up of...
 */
 
 import './App.css'
-import Header from "./components/Header";
-import Footer from './components/Footer';
+import Header from "./components/shared/Header";
+import Footer from './components/shared/Footer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Netflix from './pages/Netflix';
+import Employees from './pages/Employees';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 // Component defn 
 function App() {
   // must return JSX
   return (
-    <div>
+    <BrowserRouter>
       <Header />
 
-      <main className='container mt-5 pt-2'>
-        <h1>Success!</h1>
+      <main className="container mt-5 pt-2">
+        {/* Routing Configuration */}
+        <Routes>
+          <Route path="/" element={ <Home /> } />
+          <Route path="/netflix" element={<Netflix />} />
+          <Route path="/employees" element={<Employees />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </main>
 
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

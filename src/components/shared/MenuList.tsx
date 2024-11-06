@@ -1,31 +1,33 @@
+import { Link } from "react-router-dom";
+
 // Fn component with Arrow Fn
 const MenuList = () => {
   return (
     <ul className="navbar-nav me-auto mb-2 mb-md-0">
       <li className="nav-item">
-        <a className="nav-link active" aria-current="page" href="/">
+        <Link className="nav-link active" aria-current="page" to="/">
           Home
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/netflix">
+        <Link className="nav-link" to="/netflix">
           Netflix
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/employees">
+        <Link className="nav-link" to="/employees">
           Employee Manager
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/about">
+        <Link className="nav-link" to="/about">
           About
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/contact">
+        <Link className="nav-link" to="/contact">
           Contact
-        </a>
+        </Link>
       </li>
     </ul>
   );
