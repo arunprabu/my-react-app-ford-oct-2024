@@ -90,10 +90,10 @@ Agenda
 ---
   Core Concepts
     1. Props  [DONE]
-    2. States  
-    3. Events 
-    4. Conditional Rendering 
-    5. Lists and Keys 
+    2. States  [DONE]
+    3. Events [DONE]
+    4. Conditional Rendering [DONE]
+    5. Lists and Keys [DONE]
 
 
 Cross Component Communication
@@ -101,5 +101,11 @@ Cross Component Communication
   1. Parent to Child Component Communication [DONE]
       using props  
 
-  2. Child to Parent Component Communication
+  2. Child to Parent Component Communication [DONE]
+      using props, states, events
+      
   3. Any to Any Component Communication
+
+
+=====
+

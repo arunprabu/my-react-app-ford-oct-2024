@@ -1,5 +1,6 @@
 import FeaturedShowList from "../components/netflix/FeaturedShowList"
 import LatestShowList from "../components/netflix/LatestShowList"
+import RecommendedShowList from "../components/netflix/RecommendedShowList"
 
 const Netflix = () => {
   return (
@@ -8,10 +9,14 @@ const Netflix = () => {
 
       {/* Props Demo */}
       <FeaturedShowList />
+      <hr/>
 
-      {/* States Demo */}
+      {/* States, Events Demo */}
       <LatestShowList />
 
+      <hr/>
+      {/* Props, States, Events, Conditional Rendering, Lists & Keys Demo */}
+      <RecommendedShowList />
       
     </div>
   )

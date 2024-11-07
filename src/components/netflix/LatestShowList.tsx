@@ -5,7 +5,7 @@ const LatestShowList = () => {
   console.log("1. Program Started");
 
   const [resolution, setResolution] = useState("HD");
-  const [show, setShow] = useState([
+  const [shows, setShow] = useState([
     {
       id: 43564756,
       title: "The Big Bang Theory",
@@ -35,17 +35,25 @@ const LatestShowList = () => {
       <h3>Latest Shows | States and Events Demo</h3>
       <h4>
         Watch the Latest Shows in {resolution} |{" "}
-        <button className="btn btn-info" 
-          onClick={handleChangeResolution}>Change Resolution</button>
+        <button className="btn btn-info" onClick={handleChangeResolution}>
+          Change Resolution
+        </button>
       </h4>
       <div className="col-md-3">
-        <LatestShow 
-          title={show[0].title}
-          description={show[0].description}
-          thumbnailUrl={show[0].thumbnailUrl}
-          />
+        <LatestShow
+          title={shows[0].title}
+          description={shows[0].description}
+          thumbnailUrl={shows[0].thumbnailUrl}
+        />
       </div>
-      
+
+      <div className="col-md-3">
+        <LatestShow
+          title={shows[1].title}
+          description={shows[1].description}
+          thumbnailUrl={shows[1].thumbnailUrl}
+        />
+      </div>
     </div>
   );
 };
