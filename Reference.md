@@ -90,7 +90,7 @@ Agenda
 ---
   Core Concepts
     1. Props  [DONE]
-    2. States 
+    2. States  
     3. Events 
     4. Conditional Rendering 
     5. Lists and Keys 

@@ -5,7 +5,7 @@ const FeaturedShowList = () => {
     <div className="row">
       <h3>Featured Shows | Props Demo</h3>
 
-      <div className="col-md-4">
+      <div className="col-md-3">
         <FeaturedShow
           title="Godfather"
           description="The most famous American crime drama series."
@@ -15,7 +15,7 @@ const FeaturedShowList = () => {
         />
       </div>
 
-      <div className="col-md-4">
+      <div className="col-md-3">
         <FeaturedShow
           title="The Good, The Bad and The Ugly"
           description="Spaghetti western about a good guy who gets a bad guy."
