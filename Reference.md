@@ -109,3 +109,15 @@ Cross Component Communication
 
 =====
 
+
+Employee Manager
+---
+  List Employees 
+    localhost:5173/employees/
+  
+  Create Employee
+    localhost:5173/employees/add
+
+  Employee Details
+    localhost:5173/employees/1
+    localhost:5173/employees/2345
