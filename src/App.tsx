@@ -18,6 +18,8 @@ import Netflix from './pages/Netflix';
 import Employees from './pages/Employees';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import AddEmployee from './components/employees/AddEmployee';
+import EmployeeDetails from './components/employees/EmployeeDetails';
 
 // Component defn 
 function App() {
@@ -29,9 +31,11 @@ function App() {
       <main className="container mt-5 pt-2">
         {/* Routing Configuration */}
         <Routes>
-          <Route path="/" element={ <Home /> } />
+          <Route path="/" element={<Home />} />
           <Route path="/netflix" element={<Netflix />} />
           <Route path="/employees" element={<Employees />} />
+          <Route path="/employees/add" element={<AddEmployee />} />
+          <Route path="/employees/:id" element={<EmployeeDetails />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
