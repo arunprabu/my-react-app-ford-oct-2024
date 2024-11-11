@@ -20,6 +20,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import AddEmployee from './components/employees/AddEmployee';
 import EmployeeDetails from './components/employees/EmployeeDetails';
+import Spotify from './pages/Spotify';
 
 // Component defn 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/employees" element={<Employees />} />
           <Route path="/employees/add" element={<AddEmployee />} />
           <Route path="/employees/:id" element={<EmployeeDetails />} />
+          <Route path="/spotify" element={<Spotify />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

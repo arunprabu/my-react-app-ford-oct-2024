@@ -1,9 +1,9 @@
 interface IFeaturedShowProps {
   title: string;
-  description: string;
   category: string;
   publishedOn: string;  
   thumbnailUrl: string;
+  children?: string;
 }
 
 const FeaturedShow = (props: IFeaturedShowProps) => {
@@ -18,7 +18,7 @@ const FeaturedShow = (props: IFeaturedShowProps) => {
       <img src={props.thumbnailUrl} className="card-img-top" alt="..." />
       <div className="card-body">
         <h5 className="card-title">{props.title}</h5>
-        <p className="card-text">{props.description}</p>
+        <p className="card-text">{props.children}</p>
       </div>
       <ul className="list-group list-group-flush">
         <li className="list-group-item">{props.category}</li>

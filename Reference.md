@@ -121,3 +121,6 @@ Employee Manager
   Employee Details
     localhost:5173/employees/1
     localhost:5173/employees/2345
+
+-------
+

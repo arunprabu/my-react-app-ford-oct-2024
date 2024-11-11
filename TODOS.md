@@ -7,4 +7,12 @@
 7. Implement error handling in Employees.tsx
 8. Implement error handling in AddEmployee.tsx
 9. Implement form validation in AddEmployee.tsx
-10.
+10. Implement Update Employee Details
+11. Implement Delete Employee Details
+12. Implement Nested Routing for about urls 
+      localhost:5173/about/
+      localhost:5173/about/team
+      localhost:5173/about/history
+
+====
+
