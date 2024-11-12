@@ -124,3 +124,49 @@ Employee Manager
 
 -------
 
+Any to Any Component Communication
+---
+  Implementing Context API Steps for any to any component communication
+  ===
+    1. Create a new context  in contexts/PlaylistContext.tsx
+    2. Provide the context to the necessary components
+      2.1. ContextProvider  is needed for us to supply the data
+      2.2. It should be accessible to the necessary the components
+    3. consume the context in the necessary components with useContext 
+
+
+====
+====
+ReactJS - Performace Tips
+--
+1. Use NPM package or any third party libraries only if absolutely needed.
+2. Most performance issues come in lists. So, think about having pagination.
+  Try this awesome package
+  https://bvaughn.github.io/react-virtualized/
+3. Make use of props wisely. Don't leave out unused props. 
+ 
+  So, a bad way could be...
+  const MyComp = (props) => { //bad way if all props are not used
+
+  }
+
+  but a better way to have props here.. using object destructuring.
+  cont MyComp = ({ title, body, postId}){ // ignoring userId, if I don't display it anywhere
+
+  }
+  Also,don't pass unneccessary props. 
+
+4. Lazy Load Images 
+  https://www.npmjs.com/package/react-lazy-load-image-component
+5. Use profiler to record the app pages. And then check and fix the app. 
+6. Think about optimizing back end also. 
+7. Avoid having unnecessary tags, css. go with Fragment, <></>, 
+9. Don't bloat the page with too many components, 
+  because components will have re-rendering cycles.
+  If one parent comp updates, that will update child comp's till the last level.
+10. Don't create even a single class component. Use ONLY functional components. 
+  Use hooks to stop child comp re-rendering. Remember useEffect, useCallback!
+11. Don't write too many inline styles. You should definitely avoid it inside loops.
+
+13. use useMemo, useCallback hooks
+14. Learn more performance tips.. There are aplenty.
