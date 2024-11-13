@@ -5,7 +5,7 @@ import App from './App.tsx' // app comp
 
 // App Component is rendered in a div element which has an id root
 createRoot(document.getElementById('root')!).render(
-  // <StrictMode>
+  <StrictMode>
     <App />
-  // </StrictMode>,
+  </StrictMode>,
 )

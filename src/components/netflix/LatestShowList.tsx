@@ -5,7 +5,7 @@ const LatestShowList = () => {
   console.log("1. Program Started");
 
   const [resolution, setResolution] = useState("HD");
-  const [shows, setShow] = useState([
+  const [shows] = useState([
     {
       id: 43564756,
       title: "The Big Bang Theory",

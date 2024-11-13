@@ -170,3 +170,19 @@ ReactJS - Performace Tips
 
 13. use useMemo, useCallback hooks
 14. Learn more performance tips.. There are aplenty.
+
+
+
+  
+  Rules of Hooks (10 mins)
+  ----- 
+    * use the hooks only in functional components
+    * use the hooks only on top level 
+    * don't use hooks inside loops, conditonals (if else, switch case)
+    * don't use hooks inside event handlers, callbacks and functions 
+
+
+
+  Build and Deployment (10 mins)
+  ----
+    npm run build     
